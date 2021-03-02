@@ -1,0 +1,31 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="AspLoginDemo1.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:Menu ID="Menu1" runat="server">
+            <Items>
+                <asp:MenuItem Text="firstpage" Value="firstpage"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/Secondpage.aspx" Text="SecondPage" Value="SecondPage"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/Addproject.aspx" Text="Add Project" Value="Add Project"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/AssignProjecttoL.aspx" Text="AssignProject" Value="AssignProject"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/ViewTem.aspx" Text="ViewTeamLead" Value="ViewTeamLead"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/ViewAllProject.aspx" Text="ViewAllProject" Value="ViewAllProject"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/AddEmployee.aspx" Text="AddEmployee" Value="AddEmployee"></asp:MenuItem>
+            </Items>
+        </asp:Menu>
+        
+        <a href="AddEmployee.aspx">AddEmployee.aspx</a><div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
